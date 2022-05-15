@@ -35,12 +35,12 @@
             "id": "Admin_Menu_Search"
         },
         "Dashboard": {
-            "weight": "-7",
             "title": "Dashboard",
-            "text": "Here is a quick link to the Dashboard. The Dashboard is a great location to find lots of useful information about your site and tips for getting started. Let's go there now.Here is a quick link to the Dashboard. <br> <br> The Dashboard is a great location to find lots of useful information about your site and tips for getting started. Let's go there now.",
+            "text": "Here is a quick link to the Dashboard. The Dashboard is a great location to find lots of useful information about your site and tips for getting started. Let's go there now.",
             "selector": ".admin-dashboard",
             "jump": "/admin/dashboard",
-            "id": "Dashboard"
+            "id": "Dashboard",
+            "weight": "-7"
         },
         "Welcome_Block": {
             "weight": "-6",
@@ -131,7 +131,7 @@
             "id": "Search_New_Modules"
         },
         "Add_A_Module": {
-            "weight": "6",
+            "weight": "5",
             "title": "Add A Module",
             "text": "Select a new module for installation.",
             "selector": "table tr:nth-of-type(2)",
@@ -139,7 +139,7 @@
             "id": "Add_A_Module"
         },
         "Structure": {
-            "weight": "8",
+            "weight": "6",
             "title": "Structure",
             "text": "Use the structure menu to create new content types, configure your site layout, edit your menus and add taxonomy terms.",
             "selector": ".admin-structure",
@@ -147,7 +147,7 @@
             "id": "Structure"
         },
         "Layouts": {
-            "weight": "10",
+            "weight": "7",
             "title": "Layouts",
             "text": "This is the page where you manage the layouts. Be sure to spend some time on this page, because understanding how to create and configure layouts is a critical skill to customize your site the way you like it.",
             "selector": "",
@@ -155,15 +155,55 @@
             "id": "Layouts"
         },
         "Home_Page_Layout": {
-            "weight": "12",
+            "weight": "8",
             "title": "Home Page Layout",
             "text": "Most sites have a custom layout for the home page. This is where you will configure your home page layout.",
             "selector": "#layout-edit",
-            "jump": "/",
+            "jump": "",
             "id": "Home_Page_Layout"
         },
+        "Select_Layout_Template": {
+            "weight": "5",
+            "title": "Select A Layout Template",
+            "text": "For each layout on your site, you can choose from a number of existing layout templates.",
+            "selector": ".tabs li:nth-of-type(2)",
+            "jump": "/admin/structure/layouts/manage/home/configure",
+            "id": "Select_Layout_Template"
+        },
+        "Configure_Layout": {
+            "weight": "5",
+            "title": "Configure Layout",
+            "text": "This is where you select a specific layout template for your layout and configure visibility rules.",
+            "selector": ".tabs li:nth-of-type(2)",
+            "jump": "/admin/structure/layouts",
+            "id": "Configure_Layout"
+        },
+        "Layout_Templates": {
+            "weight": "5",
+            "title": "Layout Templates",
+            "text": "Go to Layouts > Templates to see select which templates are available or create your own flexible layout template.",
+            "selector": ".tabs li:nth-of-type(3)",
+            "jump": "/admin/structure/layouts/settings",
+            "id": "Layout_Templates"
+        },
+        "Flexible_Templates": {
+            "weight": "5",
+            "title": "Flexible Layout Templates",
+            "text": "For maximum control, build your own flexible layout template.",
+            "selector": ".l-wrapper-inner .action-links",
+            "jump": "/admin/structure/layouts/settings/flexible-template/demo/configure",
+            "id": "Flexible_Templates"
+        },
+        "Flexible_Templates_Page": {
+            "weight": "5",
+            "title": "Flexible Layout Templates",
+            "text": "Build your own layout template with precisely the regions and configuration that you require.",
+            "selector": "#layout-flexible-content",
+            "jump": "/",
+            "id": "Flexible_Templates_Page"
+        },
         "End_of_Tour": {
-            "weight": "20",
+            "weight": "9",
             "title": "End of Tour",
             "text": "There are too many configuration pages for us to cover in one tour. Please, keep exploring and learning more about how to customize your Backdrop CMS website.",
             "selector": ".admin-structure",
