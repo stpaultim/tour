@@ -31,14 +31,14 @@
             "title": "Admin Menu Search",
             "text": "This menu search will help you find features and configuration pages quickly. Please, experiment a bit with this tool after the tour. ",
             "selector": ".admin-bar-search",
-            "jump": "",
+            "jump": "/admin/dashboard",
             "id": "Admin_Menu_Search"
         },
         "Dashboard": {
             "title": "Dashboard",
-            "text": "Here is a quick link to the Dashboard. The Dashboard is a great location to find lots of useful information about your site and tips for getting started. Let's go there now.",
+            "text": "Here is a quick link to the Dashboard. The Dashboard is a great location to find lots of useful information about your site and tips for getting started.",
             "selector": ".admin-dashboard",
-            "jump": "/admin/dashboard",
+            "jump": "",
             "id": "Dashboard",
             "weight": "-7"
         },
@@ -47,7 +47,7 @@
             "title": "Welcome Block - Dashboard",
             "text": "Be sure to check out the tips provided here to help you get started. You can disable or hide this block when you no longer need it.",
             "selector": ".block-dashboard-welcome",
-            "jump": "",
+            "jump": "/admin/content",
             "id": "Welcome_Block"
         },
         "Content_Menu": {
@@ -55,7 +55,7 @@
             "title": "Content Menu",
             "text": "This is where you will manage the content on your site. Click on the top level content link to see a list of all the content on your site and then filter by content type.",
             "selector": ".admin-content",
-            "jump": "/admin/content",
+            "jump": "",
             "id": "Content_Menu"
         },
         "Content_List": {
@@ -71,7 +71,7 @@
             "title": "Content Filters",
             "text": "Search your content by title or filter by content type.",
             "selector": ".views-exposed-form",
-            "jump": "",
+            "jump": "/admin/people",
             "id": "Content_Filters"
         },
         "User_Accounts": {
@@ -79,7 +79,7 @@
             "title": "User Accounts",
             "text": "This is where you will add, delete, and manage your user accounts. ",
             "selector": ".admin-people",
-            "jump": "/admin/people",
+            "jump": "",
             "id": "User_Accounts"
         },
         "Add_User": {
@@ -95,7 +95,7 @@
             "title": "Manage Users",
             "text": "Here you can search for users by name or filter by status or role.",
             "selector": "#views-exposed-form-user-admin-page",
-            "jump": "",
+            "jump": "/admin/modules",
             "id": "Manage_Users"
         },
         "Functionality": {
@@ -103,7 +103,7 @@
             "title": "Functionality",
             "text": "This is where you can download and adminster modules that add functionality to your site.",
             "selector": ".admin-modules",
-            "jump": "/admin/modules",
+            "jump": "",
             "id": "Functionality"
         },
         "Filter_Modules": {
@@ -111,7 +111,7 @@
             "title": "Filter Modules",
             "text": "Start typing here to find and enable modules that are already installed on your site.",
             "selector": ".system-modules .table-filter",
-            "jump": "",
+            "jump": "/admin/modules/install",
             "id": "Filter_Modules"
         },
         "Find_New_Modules": {
@@ -119,7 +119,7 @@
             "title": "Find New Modules",
             "text": "Click here to search for and find new modules that add functionality to your site.",
             "selector": ".tabs.primary li:nth-of-type(2)",
-            "jump": "/admin/modules/install",
+            "jump": "",
             "id": "Find_New_Modules"
         },
         "Search_New_Modules": {
@@ -135,14 +135,14 @@
             "title": "Add A Module",
             "text": "Select a new module for installation.",
             "selector": "table tr:nth-of-type(2)",
-            "jump": "",
+            "jump": "/admin/structure",
             "id": "Add_A_Module"
         },
         "Structure": {
             "weight": "6",
             "title": "Structure",
             "text": "Use the structure menu to create new content types, configure your site layout, edit your menus and add taxonomy terms.",
-            "selector": ".admin-structure",
+            "selector": "a.admin-structure",
             "jump": "/admin/structure/layouts",
             "id": "Structure"
         },
@@ -150,40 +150,32 @@
             "weight": "7",
             "title": "Layouts",
             "text": "This is the page where you manage the layouts. Be sure to spend some time on this page, because understanding how to create and configure layouts is a critical skill to customize your site the way you like it.",
-            "selector": "",
+            "selector": ".l-content details",
             "jump": "/admin/structure/layouts/manage/home",
             "id": "Layouts"
         },
         "Home_Page_Layout": {
             "weight": "8",
             "title": "Home Page Layout",
-            "text": "Most sites have a custom layout for the home page. This is where you will configure your home page layout.",
-            "selector": "#layout-edit",
-            "jump": "",
-            "id": "Home_Page_Layout"
+            "text": "Most sites have a custom layout for the home page. This is where you will configure your home page layout, edit existing blocks, and add new ones.",
+            "selector": ".l-top",
+            "jump": "/admin/structure/layouts/manage/home/configure",
+            "id": ".tabs.primary li:nth-of-type(1)"
         },
         "Select_Layout_Template": {
             "weight": "5",
             "title": "Select A Layout Template",
-            "text": "For each layout on your site, you can choose from a number of existing layout templates.",
+            "text": "For each layout on your site, you can choose from a number of existing layout templates and configure your layout visibility rules.",
             "selector": ".tabs li:nth-of-type(2)",
-            "jump": "/admin/structure/layouts/manage/home/configure",
+            "jump": "/admin/structure/layouts/settings",
             "id": "Select_Layout_Template"
-        },
-        "Configure_Layout": {
-            "weight": "5",
-            "title": "Configure Layout",
-            "text": "This is where you select a specific layout template for your layout and configure visibility rules.",
-            "selector": ".tabs li:nth-of-type(2)",
-            "jump": "/admin/structure/layouts",
-            "id": "Configure_Layout"
         },
         "Layout_Templates": {
             "weight": "5",
             "title": "Layout Templates",
             "text": "Go to Layouts > Templates to see select which templates are available or create your own flexible layout template.",
             "selector": ".tabs li:nth-of-type(3)",
-            "jump": "/admin/structure/layouts/settings",
+            "jump": "",
             "id": "Layout_Templates"
         },
         "Flexible_Templates": {
