@@ -11,196 +11,211 @@
     "enabled": 1,
     "steps": {
         "Welcome": {
+            "weight": "-10",
             "title": "Welcome",
-            "text": "Welcome to this tour of your new Backdrop CMS site. We will start here on the front page and show you some of the most important things you need to know about your site. ",
+            "text": {
+                "value": "<p><strong>Welcome to this tour of your new Backdrop CMS site.</strong></p><p>We will start here on the front page and show you some of the most important things you need to know about your site.</p>\r\n",
+                "format": "filtered_html"
+            },
             "selector": ".block-hero",
             "jump": "",
-            "id": "Welcome",
-            "weight": "-10"
+            "id": "welcome"
+
         },
         "Admin_Bar": {
-            "weight": "-9",
+            "weight": "-7",
             "title": "Admin Bar",
-            "text": "This admin bar at the top of the page is for administrators only. You can navigate to almost every administrative tool on your site through the menus provided here.",
+            "text": {
+                "value": "<p><strong>This admin bar at the top of the page is for administrators only.</strong></p><p>You can navigate to almost every administrative tool on your site through the menus provided here.</p>\r\n",
+                "format": "filtered_html"
+            },
             "selector": "#admin-bar-wrapper",
             "jump": "",
-            "id": "Admin_Bar"
+            "id": "admin_bar"
         },
         "Admin_Menu_Search": {
-            "weight": "-8",
+            "weight": "-6",
             "title": "Admin Menu Search",
-            "text": "This menu search will help you find features and configuration pages quickly. Please, experiment a bit with this tool after the tour. ",
+            "text": "<strong>This menu search</strong> will help you find features and configuration pages quickly.",
             "selector": ".admin-bar-search",
             "jump": "/admin/dashboard",
-            "id": "Admin_Menu_Search"
+            "id": "admin_menu_search"
         },
         "Dashboard": {
+            "weight": "-5",
             "title": "Dashboard",
-            "text": "Here is a quick link to the Dashboard. The Dashboard is a great location to find lots of useful information about your site and tips for getting started.",
+            "text": "<p><strong>Here is a quick link to the Dashboard.</strong></p>",
             "selector": ".admin-dashboard",
             "jump": "",
-            "id": "Dashboard",
-            "weight": "-7"
+            "id": "dashboard"
         },
         "Welcome_Block": {
-            "weight": "-6",
+            "weight": "-4",
             "title": "Welcome Block - Dashboard",
-            "text": "Be sure to check out the tips provided here to help you get started. You can disable or hide this block when you no longer need it.",
+            "text": "<p><strong>The Dashboard is a great place to get started.</strong></p> <p>You will find lots of useful information about your site and tips for beginners in our welcome block.</p>",
             "selector": ".block-dashboard-welcome",
             "jump": "/admin/content",
-            "id": "Welcome_Block"
+            "id": "welcome_block"
         },
         "Content_Menu": {
-            "weight": "-5",
+            "weight": "-3",
             "title": "Content Menu",
-            "text": "This is where you will manage the content on your site. Click on the top level content link to see a list of all the content on your site and then filter by content type.",
+            "text": "<strong>This is where you will manage the content on your site.</strong>",
             "selector": ".admin-content",
             "jump": "",
-            "id": "Content_Menu"
+            "id": "content_menu"
         },
         "Content_List": {
-            "weight": "-4",
+            "weight": "-2",
             "title": "Content List",
-            "text": "This is a list of all the content on your site.",
+            "text": "The content page has <strong>a list of all the content on your site.</strong>",
             "selector": "#views-form-node-admin-content-page",
             "jump": "",
-            "id": "Content_List"
+            "id": "content_list"
         },
         "Content_Filters": {
-            "weight": "-3",
+            "weight": "-1",
             "title": "Content Filters",
-            "text": "Search your content by title or filter by content type.",
+            "text": "<strong>Search your content by title or filter by content type.</strong>",
             "selector": ".views-exposed-form",
             "jump": "/admin/people",
-            "id": "Content_Filters"
+            "id": "content_filters"
         },
         "User_Accounts": {
-            "weight": "-2",
+            "weight": "0",
             "title": "User Accounts",
-            "text": "This is where you will add, delete, and manage your user accounts. ",
+            "text": "This is where you will add, delete, and <strong>manage your user accounts.</strong> ",
             "selector": ".admin-people",
             "jump": "",
-            "id": "User_Accounts"
-        },
-        "Add_User": {
-            "weight": "-1",
-            "title": "Add a User",
-            "text": "This is where you will add a new user to your site.",
-            "selector": ".l-wrapper-inner .action-links",
-            "jump": "",
-            "id": "Add_User"
+            "id": "user_accounts"
         },
         "Manage_Users": {
-            "weight": "0",
+            "weight": "2",
             "title": "Manage Users",
-            "text": "Here you can search for users by name or filter by status or role.",
+            "text": "Here you can <strong>search for users</strong> by name or filter by status or role.",
             "selector": "#views-exposed-form-user-admin-page",
+            "jump": "/admin/appearance",
+            "id": "manage_users"
+        },
+        "Appearance": {
+            "weight": "3",
+            "title": "Appearance",
+            "text": "This is the page where you can <strong>administer and add new themes</strong> to your site to change the overall look and feel.",
+            "selector": ".admin-appearance",
+            "jump": "/admin/appearance/install",
+            "id": "appearance"
+        },
+        "Install_Themes": {
+            "weight": "4",
+            "title": "Find new themes",
+            "text": "You can <strong>browse and install new themes</strong> available on BackdropCMS.org.",
+            "selector": ".tabs.primary li:nth-of-type(2)",
             "jump": "/admin/modules",
-            "id": "Manage_Users"
+            "id": "install_themes"
         },
         "Functionality": {
-            "weight": "1",
+            "weight": "5",
             "title": "Functionality",
-            "text": "This is where you can download and adminster modules that add functionality to your site.",
+            "text": "This is where you can <strong>download and adminster modules</strong> that add functionality to your site.",
             "selector": ".admin-modules",
             "jump": "",
-            "id": "Functionality"
-        },
-        "Filter_Modules": {
-            "weight": "2",
-            "title": "Filter Modules",
-            "text": "Start typing here to find and enable modules that are already installed on your site.",
-            "selector": ".system-modules .table-filter",
-            "jump": "/admin/modules/install",
-            "id": "Filter_Modules"
+            "id": "functionality"
         },
         "Find_New_Modules": {
-            "weight": "3",
+            "weight": "9",
             "title": "Find New Modules",
-            "text": "Click here to search for and find new modules that add functionality to your site.",
+            "text": "Click here to <strong>search for and find new modules</strong> that add functionality to your site.",
             "selector": ".tabs.primary li:nth-of-type(2)",
-            "jump": "",
-            "id": "Find_New_Modules"
-        },
-        "Search_New_Modules": {
-            "weight": "4",
-            "title": "Search For New Modules",
-            "text": "Search here for modules that are available, but not yet installed on your site.",
-            "selector": ".installer-browser-filters-form",
-            "jump": "",
-            "id": "Search_New_Modules"
+            "jump": "/admin/modules/install",
+            "id": "find_new_modules"
         },
         "Add_A_Module": {
-            "weight": "5",
+            "weight": "13",
             "title": "Add A Module",
-            "text": "Select a new module for installation.",
+            "text": "<strong>Select a new module for installation.</strong>",
             "selector": "table tr:nth-of-type(2)",
             "jump": "/admin/structure",
-            "id": "Add_A_Module"
+            "id": "add_a_module"
         },
         "Structure": {
-            "weight": "6",
+            "weight": "16",
             "title": "Structure",
-            "text": "Use the structure menu to create new content types, configure your site layout, edit your menus and add taxonomy terms.",
-            "selector": "a.admin-structure",
+            "text": "<strong>Use the structure menu to create new content types</strong>, configure your site layout, edit your menus and add taxonomy terms.",
+            "selector": ".admin-structure",
             "jump": "/admin/structure/layouts",
-            "id": "Structure"
+            "id": "structure"
         },
         "Layouts": {
-            "weight": "7",
-            "title": "Layouts",
-            "text": "This is the page where you manage the layouts. Be sure to spend some time on this page, because understanding how to create and configure layouts is a critical skill to customize your site the way you like it.",
+            "weight": "18",
+            "title": "How layouts work",
+            "text": "<p><strong>Every page on your site is governed by a layout.</strong></p><p>This section will help you understand a little better how to determine which layout is used for which page.</p>",
             "selector": ".l-content details",
+            "jump": "",
+            "id": "layouts"
+        },
+        "Dashboard_Layout": {
+            "weight": "18",
+            "title": "Dashboard Layout.",
+            "text": "<p><strong>The Dashboard has it's own custom layout.</strong></p><p>You can add custom blocks here or disable blocks on the Dashboard that you don't need or use.</p>",
+            "selector": "table:nth-of-type(2) tr:nth-of-type(4)",
+            "jump": "",
+            "id": "dashboard_layout"
+        },
+        "Default_Layout": {
+            "weight": "18",
+            "title": "Default Layout.",
+            "text": "<p><strong>Default layout is used for any page without a custom layout of it's own.</strong></p>",
+            "selector": "table:nth-of-type(4) tr:nth-of-type(2)",
+            "jump": "",
+            "id": "default_layout"
+        },
+        "This_Page": {
+            "weight": "18",
+            "title": "Find the layout for your page.",
+            "text": "<p>You can always <strong>jump to the layout or theme for any page</strong> using the 'This page' component in the admin bar menu.</p>",
+            "selector": ".admin-bar-page-links",
             "jump": "/admin/structure/layouts/manage/home",
-            "id": "Layouts"
+            "id": "this_page"
         },
         "Home_Page_Layout": {
-            "weight": "8",
+            "weight": "19",
             "title": "Home Page Layout",
-            "text": "Most sites have a custom layout for the home page. This is where you will configure your home page layout, edit existing blocks, and add new ones.",
+            "text": "<p><strong>Most sites have a custom layout for the home page.</strong></p><p>We are looking at the 'Top' region. Use the 'Add Block' option to add existing blocks or create new ones, use the 'Configure' option to edit/configure existing blocks.</p>",
             "selector": ".l-top",
             "jump": "/admin/structure/layouts/manage/home/configure",
-            "id": ".tabs.primary li:nth-of-type(1)"
+            "id": "home_page_layout"
         },
         "Select_Layout_Template": {
-            "weight": "5",
+            "weight": "20",
             "title": "Select A Layout Template",
-            "text": "For each layout on your site, you can choose from a number of existing layout templates and configure your layout visibility rules.",
+            "text": "For each layout on your site, you can <strong>choose from a number of existing layout templates</strong> and configure your layout visibility rules.",
             "selector": ".tabs li:nth-of-type(2)",
             "jump": "/admin/structure/layouts/settings",
-            "id": "Select_Layout_Template"
+            "id": "select_layout_template"
         },
         "Layout_Templates": {
-            "weight": "5",
+            "weight": "21",
             "title": "Layout Templates",
-            "text": "Go to Layouts > Templates to see select which templates are available or create your own flexible layout template.",
+            "text": "Go to Layouts > Templates to <strong>manage which templates are available</strong>.",
             "selector": ".tabs li:nth-of-type(3)",
             "jump": "",
-            "id": "Layout_Templates"
-        },
-        "Flexible_Templates": {
-            "weight": "5",
-            "title": "Flexible Layout Templates",
-            "text": "For maximum control, build your own flexible layout template.",
-            "selector": ".l-wrapper-inner .action-links",
-            "jump": "/admin/structure/layouts/settings/flexible-template/demo/configure",
-            "id": "Flexible_Templates"
+            "id": "layout_templates"
         },
         "Flexible_Templates_Page": {
-            "weight": "5",
+            "weight": "22",
             "title": "Flexible Layout Templates",
-            "text": "Build your own layout template with precisely the regions and configuration that you require.",
-            "selector": "#layout-flexible-content",
+            "text": "<strong>Build your own layout template</strong> with precisely the regions and configuration that you require.",
+            "selector": ".action-links",
             "jump": "/",
-            "id": "Flexible_Templates_Page"
+            "id": "flexible_templates_page"
         },
         "End_of_Tour": {
-            "weight": "9",
+            "weight": "40",
             "title": "End of Tour",
-            "text": "There are too many configuration pages for us to cover in one tour. Please, keep exploring and learning more about how to customize your Backdrop CMS website.",
-            "selector": ".admin-structure",
+            "text": "<p>We can't cover everything in just one tour.</p><p>Please, checkout the <a href='https://backdropcms.org/user-guide'>Backdrop User Guide</a> for more information.</p>",
+            "selector": "",
             "jump": "",
-            "id": "End_of_Tour"
+            "id": "end_of_tour"
         }
     }
 }
